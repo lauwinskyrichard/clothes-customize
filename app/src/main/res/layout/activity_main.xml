@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customize Your Clothes"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        />
+
+    //Type
+    <TextView
+        android:id="@+id/typeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:text="Type:"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <Spinner
+        android:id="@+id/typeSpinner"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/typeText"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="0dp" />
+
+    //Color
+    <TextView
+        android:id="@+id/colorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/typeSpinner"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:text="Color:"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <Spinner
+        android:id="@+id/colorSpinner"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/colorText"
+        />
+
+    //Size
+    <TextView
+        android:id="@+id/sizeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/colorSpinner"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:text="Size:"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <Spinner
+        android:id="@+id/sizeSpinner"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/sizeText"
+        />
+
+    <Button
+        android:id="@+id/viewButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sizeSpinner"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="View"
+        android:background="@color/BackgroundColor"
+        android:fontFamily="sans-serif-black"
+        android:onClick="preview"
+        />
+
+    <Button
+        android:id="@+id/loadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="Load Customization"
+        android:background="@color/BackgroundColor"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/loadButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/BackgroundColor"
+        android:src="@drawable/ic_baseline_autorenew_24"
+        android:onClick="reset"
+        />
+
+
+</RelativeLayout>

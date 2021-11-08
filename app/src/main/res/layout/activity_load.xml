@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/loadPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clothes Preview"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <ImageView
+        android:id="@+id/loadImageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/loadPreview"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/loadTypeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadImageView"
+        android:textSize="20sp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <TextView
+        android:id="@+id/loadColorView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadTypeView"
+        android:textSize="20sp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <TextView
+        android:id="@+id/loadSizeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadColorView"
+        android:textSize="20sp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loadSizeView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:text="Back To Home"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20sp"
+        android:background="@color/BackgroundColor"
+        android:onClick="home"
+        />
+
+</RelativeLayout>
